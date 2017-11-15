@@ -1,5 +1,5 @@
 function perform () {
-  var args = Array.from(arguments);
+  var args = [].slice.call(arguments);
   var callback = args.pop();
   var param = callback.apply(null, args);
  
